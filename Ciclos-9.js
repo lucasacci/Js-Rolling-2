@@ -1,20 +1,20 @@
 
-let n = prompt("Ingrese la cantidad de numeros (MENOR A 50)");
+let i = 0;
+let j = 0;
 
-if(Number(n)==n && n < 50){
-    n = Number(n);
-
-    for (let i = 0; i <= n; i++) {
-        for (let j = 0; j < i; j++) {
-             document.write(i);
-        }
-        document.write("<br>");
-     }
+for (let i = 0; i <= 500; i++) {
+    
+    if(i % 4 == 0){
+        document.write(i + " - (Multiplo de 4)");
+    }
+    else if(i % 9 == 0){
+        document.write(i + " - (Multiplo de 9)");
+    }
+    else if(i % 5 == 0){
+        document.write(i + "------------------");
+    }
+    else{
+        document.write(i);
+    }
+    document.write("<br>");
 }
-else{
-    alert(`Ingrese un numero valido`);
-}
-
-
- 
- 

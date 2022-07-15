@@ -1,18 +1,19 @@
 
-let cadena = "";
-
+let suma = 0;
 
 do{
-    let a = prompt("Ingrese la cadena de texto");
+    let a = Number(prompt("Ingrese un numero"));
 
-    if(cadena == ""){
-        cadena = cadena + a;
+    if(Number(a) == a){
+
+       // a = Number(a);
+
+        suma = suma + a;
     }
     else{
-        cadena = cadena + "-" + a;
+        alert(`Ingrese un numero valido`);
     }
 
-}while(confirm("¿Quiere seguir ingresando cadenas?"))
+}while(confirm("¿Desea seguir ingresando numeros?"));
 
-
-document.write(cadena);
+document.write(suma);
