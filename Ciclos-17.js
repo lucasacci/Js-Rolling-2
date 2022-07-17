@@ -1,5 +1,7 @@
 let a = prompt(`Ingrese el texto`);
 let x = 0;
+let b = ``;
+
 
 a = a.toLowerCase();
 
@@ -16,10 +18,11 @@ for (let i = 0; i < a.length; i++) {
 
     if(s == `a` || s == `e` || s == `i` || s == `o` || s == `u`)
     {
+        b = a.charAt(i);
         x = i;
         break;
     }
     
 }
 
-document.write(`Posicion: ` + x);
+document.write(`Vocal: "${b}" <br> Posicion: ${x} `);
